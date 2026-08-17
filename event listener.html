@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event listener example</title>
+</head>
+<body>
+<h1>JavaScript event listener</h1>
+<button id="click Button">click Me</button>
+<p id="message"></p>
+<input type="text"id="text input"place holder="Type something..."/>
+<p id="input display"></p>
+<div id="hoverBox"style="width:200px;
+height:100px;
+background-color:lightblue;
+margin-top:20px;">
+Hover over this box
+</div>
+<script>
+document.getelementById("click button").addevent listener("click",function())
+{
+document.getelementById("message").innerText="Button clicked!";
+});
+document.getElementById("text Input").addevent listener("input",function(event)
+{
+document.getelementById("input display").innerText="you typed:"+event.target.value;
+});
+document.getElementById("hover box").addevent listener("mouseover",function())
+{
+this.style.backgroundcolor="orange";
+});
+document.getElementById("hover box").addevent listener("mouseout",function())
+{
+this.style.backgroundcolor="lightblue";
+});
+</script>
+</body>
+</html>
